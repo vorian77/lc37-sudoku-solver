@@ -62,7 +62,7 @@ def solveSudoku(board):
             for col, val in enumerate(values):
                 if col > 0 and col % CUBESIZE == 0:
                     line += ' '
-                line += val if val != EMPTY else '_'
+                line += val if val != EMPTY else '*'
             print(line)
         print()
 
